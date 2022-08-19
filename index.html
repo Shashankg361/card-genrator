@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="bootstrap_cards">
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Simple Card</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger">Go somewhere</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">card image top</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kitchen sink</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-danger">Card link</a>
+              <a href="#" class="btn btn-danger">Another link</a>
+            </div>
+          </div>
+
+    </div>
+
+    <form class="details-form">
+        <div class="mb-3">
+            <label for="EnterImageLink" class="form-label">Enter image Link</label>
+            <input type="text" class="form-control" id="EnterImageLink">
+          </div>
+        <div class="mb-3">
+          <label for="InputTitle" class="form-label">Enter your title</label>
+          <input type="text" class="form-control" id="InputTitle" >
+        </div>
+        <div class="mb-3">
+          <label for="EnterYourText" class="form-label">EnterText</label>
+          <input type="text" class="form-control" id="EnterYourText">
+        </div>
+        <div class="mb-3">
+            <label for="EnterTitle" class="form-label">Enter the title of the card which you want as your card</label>
+            <input type="text" class="form-control" id="EnterTitle">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Genrate</button>
+    </form>
+
+    <div class="genrated-card">
+      <div class="card genrated" style="width: 18rem;">
+        <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kitchen sink</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="btn btn-danger">Card link</a>
+          <a href="#" class="btn btn-danger">Another link</a>
+        </div>
+      </div>
+    </div>
+
+      <script src="card.js"></script>
+
+</body>
+</html>

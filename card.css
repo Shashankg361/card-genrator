@@ -1,0 +1,35 @@
+
+.card{
+    margin:2em;
+}
+
+.bootstrap_cards{
+    display: flex;
+    margin: 2em;
+    align-items: flex-start;
+    justify-items: start;
+    border: 2px black solid;
+}
+.details-form{
+    border: solid 2px black;
+    margin: 2em;
+    padding: 2em;
+}
+
+.genrated-card{
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display:none;
+}
+.genrated{
+    margin: 100px 500px;
+}
+.close-popup{
+    text-align: right;
+    cursor: pointer;
+    margin:5px;
+}
