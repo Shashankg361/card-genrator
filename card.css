@@ -1,4 +1,10 @@
-
+body{
+    background: #6699ff;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 1em;
+}
 .card{
     margin:2em;
 }
