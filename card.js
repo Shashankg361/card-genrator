@@ -1,6 +1,16 @@
 const form = document.querySelector('.details-form');
 const genrate = document.querySelector('.genrated-card');
-const closePopup = document.querySelector('.close-popup');
+const closediv = document.querySelector('.popupClose');
+
+genrate.addEventListener('click',e=>{
+  if(e.target.classList.contains('popupClose')){
+    genrate.style.display = 'none';
+    console.log('working');
+  }
+  
+});
+
+
 form.addEventListener('submit',e =>{
   e.preventDefault();
   const image =form.EnterImageLink.value.trim();
@@ -12,34 +22,31 @@ form.addEventListener('submit',e =>{
     simpleCard(image,title,text) ;
   else if('card image top'===selectedCard.toLowerCase())
     cardImageTop(image,title,text);
-  else 
+  else if('kitchen sink'===selectedCard.toLowerCase())
     kitchenSink(image,title,text);
   genrate.style.display = 'block';
-  
 });
 
-closePopup.addEventListener('click',e =>{ 
-  genrate.style.display ='none';
-});
+
 
 
 const simpleCard = ( image , title , text )=>{
-const html =  `<div class="card genrated" style="width: 18rem;">
-    <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
-      <img src="${image}" class="card-img-top" alt="...">
-      <div class="card-body">
-      <h5 class="card-title">${title}</h5>
-      <p class="card-text">${text}.</p>
-      <a href="#" class="btn btn-danger">Go somewhere</a>
-    </div>
-  </div>`
+const html =  ` <div class="card genrated" style="width: 18rem;">
+                  <div><i class="fa-solid fa-xmark popupClose"></i></div>
+                  <img src="${image}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">${title}</h5>
+                    <p class="card-text">${text}.</p>
+                    <a href="#" class="btn btn-danger">Go somewhere</a>
+                  </div>
+                </div>`
 
   genrate.innerHTML = html;
 }
 
 const cardImageTop = ( image , title , text )=>{
 const html = `<div class="card genrated" style="width: 18rem;">
-<div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+<div><i class="fa-solid fa-xmark popupClose"></i></div>
 <img src="${image}" class="card-img-top" alt="...">
 <div class="card-body">
     <h5 class="card-title">${title}</h5>
@@ -52,7 +59,7 @@ genrate.innerHTML = html;
 }
 const kitchenSink = ( image , title , text )=>{
 const html =`<div class="card genrated" style="width: 18rem;">
-<div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+<div><i class="fa-solid fa-xmark popupClose"></i></div>
 <img src="${image}" class="card-img-top" alt="...">
 <div class="card-body">
   <h5 class="card-title">${title}</h5>

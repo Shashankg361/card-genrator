@@ -1,3 +1,8 @@
+@media only screen and (max-width:500px){
+    .bootstrap_cards{
+        flex-direction: column;
+    }
+}
 body{
     background: #6699ff;
 }
@@ -34,7 +39,7 @@ body{
 .genrated{
     margin: 100px 500px;
 }
-.close-popup{
+.popupClose{
     text-align: right;
     cursor: pointer;
     margin:5px;
