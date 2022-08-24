@@ -3,8 +3,8 @@
         flex-direction: column;
     }
 }
-body{
-    background: #6699ff;
+.body{
+    background: #a6c2ff;
 }
 .heading{
     margin-top: 10px;
@@ -29,15 +29,20 @@ body{
 
 .genrated-card{
     background: rgba(0,0,0,0.5);
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    
     top:0;
     left:0;
     display:none;
 }
 .genrated{
-    margin: 100px 500px;
+    background:white;
+    text-align: center;
+    padding: 20px;
+    margin:15% auto;
+    width: 400px;
+    max-width:500px ;
 }
 .popupClose{
     text-align: right;
