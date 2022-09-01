@@ -1,5 +1,5 @@
 const form = document.querySelector('.details-form');
-export const genrate = document.querySelector('.genrated-card');
+const genrate = document.querySelector('.genrated-card');
 const closediv = document.querySelector('.popupClose');
 
 genrate.addEventListener('click',e=>{
@@ -9,7 +9,6 @@ genrate.addEventListener('click',e=>{
   }
 });
 
-
 form.addEventListener('submit',e =>{
   e.preventDefault();
   const image =form.EnterImageLink.value.trim();
@@ -17,10 +16,11 @@ form.addEventListener('submit',e =>{
   const text = form.EnterYourText.value.trim();
   const selectedCard = form.EnterTitle.value.trim();
   
-  cardGenrating(image,title,text,selectedCard);
+  cardGenrating(image,title,text,selectedCard,genrate);
 
 
   genrate.style.display = 'block';
+  console.log('working');
 });
 
 

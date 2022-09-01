@@ -1,14 +1,13 @@
-import {genrate} from './card.js';
-function cardGenrating(selectedCard){
+function cardGenrating(image,title,text,selectedCard,genrate){
     if('simple card'===selectedCard.toLowerCase())
-    simpleCard(image,title,text) ;
+    simpleCard(image,title,text,genrate) ;
   else if('card image top'===selectedCard.toLowerCase())
-    cardImageTop(image,title,text);
+    cardImageTop(image,title,text,genrate);
   else if('kitchen sink'===selectedCard.toLowerCase())
-    kitchenSink(image,title,text);
+    kitchenSink(image,title,text,genrate);
 }
 
-const simpleCard = ( image , title , text )=>{
+const simpleCard = ( image , title , text ,genrate)=>{
     const html =  ` <div class="card genrated" style="width: 18rem;">
                       <div><i class="fa-solid fa-xmark popupClose"></i></div>
                       <img src="${image}" class="card-img-top" alt="...">
@@ -22,7 +21,7 @@ const simpleCard = ( image , title , text )=>{
       genrate.innerHTML = html;
     }
     
-    const cardImageTop = ( image , title , text )=>{
+    const cardImageTop = ( image , title , text ,genrate)=>{
     const html = `<div class="card genrated" style="width: 18rem;">
     <div><i class="fa-solid fa-xmark popupClose"></i></div>
     <img src="${image}" class="card-img-top" alt="...">
@@ -35,7 +34,7 @@ const simpleCard = ( image , title , text )=>{
     genrate.innerHTML = html;
     
     }
-    const kitchenSink = ( image , title , text )=>{
+    const kitchenSink = ( image , title , text ,genrate)=>{
     const html =`<div class="card genrated" style="width: 18rem;">
     <div><i class="fa-solid fa-xmark popupClose"></i></div>
     <img src="${image}" class="card-img-top" alt="...">
