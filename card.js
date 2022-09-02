@@ -20,7 +20,7 @@ form.addEventListener('submit',e =>{
 
 
   genrate.style.display = 'block';
-  console.log('working');
+  scrollTo(0,0);
 });
 
 
