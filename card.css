@@ -1,14 +1,13 @@
 @media only screen and (max-width:500px){
     .bootstrap_cards{
         flex-direction: column;
+        align-items: center;
     }
 }.body{
     background:  #e6bfb2;
+    margin : 1em 1em;
 }
-.heading{
-    margin-top: 10px;
-    margin-left: 1em;
-}
+
 .card{
     margin:2em;
 }
@@ -21,9 +20,10 @@
     border: 2px black solid;
 }
 .details-form{
-    border: solid 2px black;
+    border: solid 2px rgba(0,0,0);
     margin: 2em;
     padding: 2em;
+    display: block;
 }
 
 .genrated-card{
