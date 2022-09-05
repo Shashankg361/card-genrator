@@ -24,7 +24,7 @@ function simpleCardForm(form2){
 </div>
 <div class="mb-3">
     <label for="EnterYourWebsiteLink" class="form-label">Enter Your Website link</label>
-    <input type="text" class="form-control" id="EnterTitle">
+    <input type="text" class="form-control" id="EnterYourWebsiteLink">
 </div>
 <div class="mb-3 form-check">
   <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -70,11 +70,11 @@ function kitchenSinkForm(form2){
 </div>
 <div class="mb-3">
     <label for="EnterYourWebsiteLink" class="form-label">Enter Your Website link</label>
-    <input type="text" class="form-control" id="EnterTitle">
+    <input type="text" class="form-control" id="EnterYourWebsiteLink">
 </div>
 <div class="mb-3">
     <label for="EnterYour2ndWebsiteLink" class="form-label">Enter Your second Website link</label>
-    <input type="text" class="form-control" id="EnterTitle">
+    <input type="text" class="form-control" id="EnterYour2ndWebsiteLink">
 </div>
 <div class="mb-3 form-check">
   <input type="checkbox" class="form-check-input" id="exampleCheck1">
