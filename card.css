@@ -52,5 +52,9 @@
 }
 .popupClose{
     cursor: pointer;
-    margin:5px;
+    margin:2px;
+    padding: 5px;
+}
+.popupClose:hover{
+    background-color: red;
 }

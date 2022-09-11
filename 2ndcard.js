@@ -2,7 +2,6 @@
 
 const simpleCard = ( image , title , text ,webLink,genrate)=>{
     const html =  ` <div class="card genrated" style="width: 18rem;">
-                      <div><i class="fa-solid fa-xmark popupClose"></i></div>
                       <img src="${image}" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">${title}</h5>
@@ -11,12 +10,11 @@ const simpleCard = ( image , title , text ,webLink,genrate)=>{
                       </div>
                     </div>`
     
-      genrate.innerHTML = html;
+      genrate.innerHTML += html;
     }
     
     const cardImageTop = ( image , title , text ,genrate)=>{
     const html = `<div class="card genrated" style="width: 18rem;">
-    <div><i class="fa-solid fa-xmark popupClose"></i></div>
     <img src="${image}" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">${title}</h5>
@@ -24,12 +22,11 @@ const simpleCard = ( image , title , text ,webLink,genrate)=>{
     </div>
     </div>
     `
-    genrate.innerHTML = html;
+    genrate.innerHTML += html;
     
     }
     const kitchenSink = ( image , title , text ,webLink,webLink2,genrate)=>{
     const html =`<div class="card genrated" style="width: 18rem;">
-    <div><i class="fa-solid fa-xmark popupClose"></i></div>
     <img src="${image}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${title}</h5>
@@ -45,6 +42,6 @@ const simpleCard = ( image , title , text ,webLink,genrate)=>{
       <a href="${webLink2}" class="btn btn-danger">Another link</a>
     </div>
     </div>`
-    genrate.innerHTML = html;
+    genrate.innerHTML += html;
     }
 
